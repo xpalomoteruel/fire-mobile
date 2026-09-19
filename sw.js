@@ -1,5 +1,5 @@
-const CACHE='fire-mobile-be0749434a838405';
-const FILES=["./icon-192.png","./icon-512.png","./index.html","./manifest.webmanifest","./snapshot.enc.json","./assets/index-bhC-ViBx.css","./assets/index-CUED_qFj.js","./assets/manifest-B59zWbUn.webmanifest"];
+const CACHE='fire-mobile-d53428d18df8d839';
+const FILES=["./icon-192.png","./icon-512.png","./index.html","./manifest.webmanifest","./snapshot.enc.json","./assets/index-BjT0Bruv.js","./assets/index-CKpCoQTl.css","./assets/manifest-B59zWbUn.webmanifest"];
 const SCOPE=new URL(self.registration.scope);
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES))));
 self.addEventListener('message',event=>{if(event.data?.type==='ACTIVATE_UPDATE')self.skipWaiting();});
